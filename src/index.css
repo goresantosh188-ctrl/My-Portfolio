@@ -72,6 +72,10 @@ h2 {
   margin-top: 10px;
 }
 
+.about {
+  transition-delay: 0.5s
+}
+
 /* Projects */
 .project-list {
   display: flex;
