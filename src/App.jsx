@@ -12,11 +12,17 @@ function App() {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('show');
+            if (entry.target.classList.contains("contact")) {
+              const logos = entry.target.querySelectorAll('img');
+              logos.forEach(logo => {
+                logo.style.animationPlayState = 'running';
+              });
+            }
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1 } // trigger when 10% visible
+      { threshold: 0.075 } // trigger when 7.5% visible
     );
 
     faders.forEach(fader => appearOnScroll.observe(fader));
@@ -35,15 +41,17 @@ function App() {
         <h1>About me</h1>
         <p>I am a professional web developer and app developer experienced in a wide variety of languages and topics such as machine learning, python, web development and more.
           <br/><br/>
-          &bull; I have made multiple neural networks (AI) in the past in python such as a shape classifier and one that plays Pong. <br/>
-          &bull; I have made multiple projects in python ranging from games to machine learning to automation. <br/>
-          &bull; In web development, I know HTML, XML, CSS, tailwind CSS, Javascript, Typescript, React.js, Node.js, Express.js, Firebase, MongoDB, and much more. <br/>
+          <ul>
+            <li>I have made multiple neural networks (AI) in the past in python such as a shape classifier and one that plays Pong. </li> <br/>
+            <li>I have made multiple projects in python ranging from games to machine learning to automation. </li> <br/>
+            <li>In web development, I know HTML, XML, CSS, tailwind CSS, Javascript, Typescript, React.js, Node.js, Express.js, Firebase, MongoDB, and much more. </li> <br/>
+          </ul>
           <br/><br/>
           I am happy to help with all of your needs, whether it may be bug bounties, debugging, adding features to your project/app/website, or just making a whole website or app from scratch.</p>
       </section>
 
       <section className="projects fade-in">
-        <h1>Some Of My Projects</h1>
+        <h1><span className="highlight">Some Of My Projects</span></h1>
         <div className="project-list fade-in">
           <ol>
             <div className="project-card fade-in">
@@ -91,10 +99,10 @@ function App() {
       </section>
 
       <section className="contact fade-in">
-        <h1>Contact Me</h1>
-        <p>Email: goresantosh188@gmail.com</p>
-        <p>Discord: finnify2 or finnify5</p>
-        <p>GitHub: <a href="https://github.com/goresantosh188-ctrl" target="_blank" rel="noreferrer">github.com/goresantosh188-ctrl</a></p> 
+        <h1><span className="contact-highlight">Contact Me</span></h1>
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"/><span className="highlight">Email</span>: <a href="mailto:goresantosh188@gmail.com" target="_blank" rel="noreferrer">goresantosh188@gmail.com</a></p>
+        <p><img src="discord.svg"/><span className="highlight">Discord</span>: finnify2 or finnify5</p>
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"/><span className="highlight">Github</span>: <a href="https://github.com/goresantosh188-ctrl" target="_blank" rel="noreferrer">github.com/goresantosh188-ctrl</a></p> 
       </section>
     </div>
   )
