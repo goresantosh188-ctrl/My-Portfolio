@@ -46,7 +46,7 @@ function App() {
         <h1>Some Of My Projects</h1>
         <div className="project-list fade-in">
           <ol>
-            <div className="project-card">
+            <div className="project-card fade-in">
               <h2><li>Live Chat App</li></h2>
               <p>&bull; This was a solo project, made entirely by myself. It is a very simple, chat app with minimalist design. The stack is react+firebase with hosting on vercel. This shows my knowledge in web development.</p>
               <p className="btn"><a href="https://github.com/goresantosh188-ctrl/Chat-app-React" target="_blank" rel="noreferrer">Click here for the github repo</a></p>
@@ -54,13 +54,29 @@ function App() {
               <h3>Live demo:</h3>
               <iframe width="560" height="315" src="https://youtube.com/embed/6Tfu-tLAk7Y" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
+
+            <div className="project-card fade-in">
+              <h2><li>Clock App</li></h2>
+              <p>&bull; This is a self made clock app, with a fully functioning time, stopwatch and timer. It was made with a completely self handled json file with no external databases like mongoDB, Firebase or SQL. This proves i know backend.</p>
+              <p className="btn"><a href="https://github.com/goresantosh188-ctrl/Clock-App" target="_blank" rel="noreferrer">Click here for the github repo</a></p>
+              <h3>Live demo:</h3>
+              <iframe width="560" height="315" src="https://youtube.com/embed/O_vH5VC2z3M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
             
             <div className="project-card fade-in">
               <h2><li>Shape Classifer Neural Network</li></h2>
-              <p>&bull; This was another solo project, made entirely by myself. It is a neural network created in python that can identify shapes based on what you have drawn. It was made from scratch using only numpy, showing my knowledge in maths and the comprehension of neural networks.</p>
+              <p>&bull; This was another solo project, made entirely by myself. It is a neural network created in python that can identify shapes based on what you have drawn. It was made from scratch using only numpy, showing my knowledge in maths and the comprehension of neural networks and AI as a whole.</p>
               <p className="btn"><a href="https://github.com/goresantosh188-ctrl/Shape-Classifier-Neural-Network" target="_blank" rel="noreferrer">Click here for the github repo</a></p>
               <h3>Live demo:</h3>
               <iframe width="560" height="315" src="https://youtube.com/embed/PZOz_luDChE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+
+            <div className="project-card fade-in">
+              <h2><li>Calculator App</li></h2>
+              <p>&bull; This is a simple plain HTML/CSS/JS only project. It is of a functioning calculator, which was created a very long time ago by me on my mobile back when i used to be a mobile coder.</p>
+              <p className="btn"><a href="https://github.com/goresantosh188-ctrl/Calculator-App" target="_blank" rel="noreferrer">Click here for the github repo</a></p>
+              <h3>Live demo:</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/KJh_8HkvXT8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
 
             <div className="project-card fade-in">
